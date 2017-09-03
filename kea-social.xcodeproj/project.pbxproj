@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		309CFAF91F5C23130093EC1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CFAF81F5C23130093EC1D /* AppDelegate.swift */; };
-		309CFAFB1F5C23130093EC1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CFAFA1F5C23130093EC1D /* ViewController.swift */; };
+		309CFAFB1F5C23130093EC1D /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CFAFA1F5C23130093EC1D /* SignInVC.swift */; };
 		309CFAFE1F5C23130093EC1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 309CFAFC1F5C23130093EC1D /* Main.storyboard */; };
 		309CFB001F5C23130093EC1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 309CFAFF1F5C23130093EC1D /* Assets.xcassets */; };
 		309CFB031F5C23130093EC1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 309CFB011F5C23130093EC1D /* LaunchScreen.storyboard */; };
+		309CFB0B1F5C24BA0093EC1D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 309CFB0A1F5C24BA0093EC1D /* GoogleService-Info.plist */; };
+		8E1ADE83B6528D3D2985C551 /* Pods_kea_social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2FE172E9D6894FD9CF86967 /* Pods_kea_social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		309CFAF51F5C23130093EC1D /* kea-social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kea-social.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		309CFAF81F5C23130093EC1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		309CFAFA1F5C23130093EC1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		309CFAFA1F5C23130093EC1D /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		309CFAFD1F5C23130093EC1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		309CFAFF1F5C23130093EC1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		309CFB021F5C23130093EC1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		309CFB041F5C23130093EC1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		309CFB0A1F5C24BA0093EC1D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		93E8A95233B311433C48973F /* Pods-kea-social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kea-social.release.xcconfig"; path = "Pods/Target Support Files/Pods-kea-social/Pods-kea-social.release.xcconfig"; sourceTree = "<group>"; };
+		A2FE172E9D6894FD9CF86967 /* Pods_kea_social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kea_social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA2ECA4DAEF59841F5DD38A3 /* Pods-kea-social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kea-social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kea-social/Pods-kea-social.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E1ADE83B6528D3D2985C551 /* Pods_kea_social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EC39B95A3D2039DF69D3149 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA2ECA4DAEF59841F5DD38A3 /* Pods-kea-social.debug.xcconfig */,
+				93E8A95233B311433C48973F /* Pods-kea-social.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		309CFAEC1F5C23130093EC1D = {
 			isa = PBXGroup;
 			children = (
 				309CFAF71F5C23130093EC1D /* kea-social */,
 				309CFAF61F5C23130093EC1D /* Products */,
+				0EC39B95A3D2039DF69D3149 /* Pods */,
+				B897857A0DB0CA2F79F4813B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +72,47 @@
 		309CFAF71F5C23130093EC1D /* kea-social */ = {
 			isa = PBXGroup;
 			children = (
+				309CFB0E1F5C2A850093EC1D /* Controller */,
+				309CFB0D1F5C2A730093EC1D /* View */,
+				309CFB0C1F5C2A6C0093EC1D /* Model */,
 				309CFAF81F5C23130093EC1D /* AppDelegate.swift */,
-				309CFAFA1F5C23130093EC1D /* ViewController.swift */,
 				309CFAFC1F5C23130093EC1D /* Main.storyboard */,
 				309CFAFF1F5C23130093EC1D /* Assets.xcassets */,
 				309CFB011F5C23130093EC1D /* LaunchScreen.storyboard */,
 				309CFB041F5C23130093EC1D /* Info.plist */,
+				309CFB0A1F5C24BA0093EC1D /* GoogleService-Info.plist */,
 			);
 			path = "kea-social";
+			sourceTree = "<group>";
+		};
+		309CFB0C1F5C2A6C0093EC1D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		309CFB0D1F5C2A730093EC1D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		309CFB0E1F5C2A850093EC1D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				309CFAFA1F5C23130093EC1D /* SignInVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B897857A0DB0CA2F79F4813B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2FE172E9D6894FD9CF86967 /* Pods_kea_social.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 309CFB071F5C23130093EC1D /* Build configuration list for PBXNativeTarget "kea-social" */;
 			buildPhases = (
+				E242380B3CB2FA5AEE0F5607 /* [CP] Check Pods Manifest.lock */,
 				309CFAF11F5C23130093EC1D /* Sources */,
 				309CFAF21F5C23130093EC1D /* Frameworks */,
 				309CFAF31F5C23130093EC1D /* Resources */,
+				7BF67780B084E658D56078FF /* [CP] Embed Pods Frameworks */,
+				BB7EA6B745DEB37E59226DDF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,18 +179,67 @@
 			files = (
 				309CFB031F5C23130093EC1D /* LaunchScreen.storyboard in Resources */,
 				309CFB001F5C23130093EC1D /* Assets.xcassets in Resources */,
+				309CFB0B1F5C24BA0093EC1D /* GoogleService-Info.plist in Resources */,
 				309CFAFE1F5C23130093EC1D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7BF67780B084E658D56078FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kea-social/Pods-kea-social-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB7EA6B745DEB37E59226DDF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kea-social/Pods-kea-social-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E242380B3CB2FA5AEE0F5607 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		309CFAF11F5C23130093EC1D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				309CFAFB1F5C23130093EC1D /* ViewController.swift in Sources */,
+				309CFAFB1F5C23130093EC1D /* SignInVC.swift in Sources */,
 				309CFAF91F5C23130093EC1D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +363,7 @@
 		};
 		309CFB081F5C23130093EC1D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA2ECA4DAEF59841F5DD38A3 /* Pods-kea-social.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "kea-social/Info.plist";
@@ -272,6 +376,7 @@
 		};
 		309CFB091F5C23130093EC1D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93E8A95233B311433C48973F /* Pods-kea-social.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "kea-social/Info.plist";
@@ -301,6 +406,7 @@
 				309CFB091F5C23130093EC1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
