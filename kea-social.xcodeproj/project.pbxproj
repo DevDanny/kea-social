@@ -13,6 +13,11 @@
 		309CFB001F5C23130093EC1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 309CFAFF1F5C23130093EC1D /* Assets.xcassets */; };
 		309CFB031F5C23130093EC1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 309CFB011F5C23130093EC1D /* LaunchScreen.storyboard */; };
 		309CFB0B1F5C24BA0093EC1D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 309CFB0A1F5C24BA0093EC1D /* GoogleService-Info.plist */; };
+		309CFB101F5C4C910093EC1D /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CFB0F1F5C4C910093EC1D /* FancyView.swift */; };
+		309CFB131F5C4D7B0093EC1D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CFB121F5C4D7B0093EC1D /* Constants.swift */; };
+		309CFB151F5C4FB70093EC1D /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CFB141F5C4FB70093EC1D /* RoundBtn.swift */; };
+		309CFB171F5C51DB0093EC1D /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CFB161F5C51DB0093EC1D /* FancyField.swift */; };
+		309CFB191F5C53680093EC1D /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CFB181F5C53680093EC1D /* FancyBtn.swift */; };
 		8E1ADE83B6528D3D2985C551 /* Pods_kea_social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2FE172E9D6894FD9CF86967 /* Pods_kea_social.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +30,11 @@
 		309CFB021F5C23130093EC1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		309CFB041F5C23130093EC1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		309CFB0A1F5C24BA0093EC1D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		309CFB0F1F5C4C910093EC1D /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
+		309CFB121F5C4D7B0093EC1D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		309CFB141F5C4FB70093EC1D /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
+		309CFB161F5C51DB0093EC1D /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
+		309CFB181F5C53680093EC1D /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
 		93E8A95233B311433C48973F /* Pods-kea-social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kea-social.release.xcconfig"; path = "Pods/Target Support Files/Pods-kea-social/Pods-kea-social.release.xcconfig"; sourceTree = "<group>"; };
 		A2FE172E9D6894FD9CF86967 /* Pods_kea_social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kea_social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA2ECA4DAEF59841F5DD38A3 /* Pods-kea-social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kea-social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kea-social/Pods-kea-social.debug.xcconfig"; sourceTree = "<group>"; };
@@ -72,6 +82,7 @@
 		309CFAF71F5C23130093EC1D /* kea-social */ = {
 			isa = PBXGroup;
 			children = (
+				309CFB111F5C4D530093EC1D /* Util */,
 				309CFB0E1F5C2A850093EC1D /* Controller */,
 				309CFB0D1F5C2A730093EC1D /* View */,
 				309CFB0C1F5C2A6C0093EC1D /* Model */,
@@ -95,6 +106,10 @@
 		309CFB0D1F5C2A730093EC1D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				309CFB0F1F5C4C910093EC1D /* FancyView.swift */,
+				309CFB141F5C4FB70093EC1D /* RoundBtn.swift */,
+				309CFB161F5C51DB0093EC1D /* FancyField.swift */,
+				309CFB181F5C53680093EC1D /* FancyBtn.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -105,6 +120,14 @@
 				309CFAFA1F5C23130093EC1D /* SignInVC.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		309CFB111F5C4D530093EC1D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				309CFB121F5C4D7B0093EC1D /* Constants.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 		B897857A0DB0CA2F79F4813B /* Frameworks */ = {
@@ -239,8 +262,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				309CFB171F5C51DB0093EC1D /* FancyField.swift in Sources */,
 				309CFAFB1F5C23130093EC1D /* SignInVC.swift in Sources */,
+				309CFB151F5C4FB70093EC1D /* RoundBtn.swift in Sources */,
 				309CFAF91F5C23130093EC1D /* AppDelegate.swift in Sources */,
+				309CFB101F5C4C910093EC1D /* FancyView.swift in Sources */,
+				309CFB131F5C4D7B0093EC1D /* Constants.swift in Sources */,
+				309CFB191F5C53680093EC1D /* FancyBtn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
